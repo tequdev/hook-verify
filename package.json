@@ -1,0 +1,35 @@
+{
+  "name": "hook-verify",
+  "version": "0.1.1",
+  "description": "",
+  "bin": {
+    "hook-verify": "./dist/src/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsx src/cli.ts",
+    "build": "tsup",
+    "start": "node dist/src/cli.js",
+    "prepublishOnly": "pnpm build"
+  },
+  "keywords": [],
+  "author": "tequ <git@tequ.dev>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tequdev/hook-verify.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@tequ/c2wasm-cli": "^1.0.7",
+    "@transia/xrpl": "2.7.3-alpha.28",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.8.7",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}

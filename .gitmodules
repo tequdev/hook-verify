@@ -1,0 +1,3 @@
+[submodule "clang/includes"]
+	path = clang/includes
+	url = https://github.com/XRPLF/hook-macros
